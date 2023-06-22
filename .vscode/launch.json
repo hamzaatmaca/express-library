@@ -1,0 +1,38 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+        "type": "node",
+        "request": "launch",
+        "name": "Node 16",
+        "program": "${workspaceFolder}/bin/www",
+        "skipFiles": [
+            "<node_internals>/**"
+        ],
+        "resolveSourceMapLocations": [
+          "${workspaceFolder}/**",
+          "!**/node_modules/**"
+        ],
+        "outputCapture": "std",
+        "runtimeVersion": "16.1.0"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Node 14",
+      "program": "${workspaceFolder}/bin/www",
+      "skipFiles": [
+          "<node_internals>/**"
+      ],
+      "resolveSourceMapLocations": [
+        "${workspaceFolder}/**",
+        "!**/node_modules/**"
+      ],
+      "outputCapture": "std",
+      "runtimeVersion": "14.15.5"
+  },
+  ]
+}
